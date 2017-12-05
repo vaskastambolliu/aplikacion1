@@ -1,3 +1,15 @@
+<html>
+<head>
+<style>
+.myRegister {
+  text-align: center;
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<h1 class = "myRegister">Register</h1>
 <p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
@@ -17,14 +29,14 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.firstname %></td>
-        <td><%= user.surname %></td>
-        <td><%= user.email %></td>
-        <td><%= user.address %></td>
-        <td><%= user.telephone %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= user.firstname %></td><br>
+        <td><%= user.surname %></td><br>
+        <td><%= user.email %></td><br>
+        <td><%= user.address %></td><br>
+        <td><%= user.telephone %></td><br>
+        <td><%= link_to 'Show', user %></td><br>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td><br>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td><br>
       </tr>
     <% end %>
   </tbody>
