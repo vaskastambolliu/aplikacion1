@@ -3,6 +3,30 @@
   <head>
     <title>Aplikacion</title>
     <%= csrf_meta_tags %>
+   
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+       
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <p>Vegetable
+"Veggie" redirects here. For the diet which only contains plants, see Veganism. For other uses, see Vegetable.
+In everyday usage, vegetables are certain parts of plants that are consumed by humans as food as part of a savory meal. Originally, the traditional term included the flowers, fruit, stems, leaves, roots, tubers, bark, seeds, and other plant matter, although, modern-day culinary usage of the term vegetable may exclude other food derived from plants, such as fruits, nuts, and cereal grains, but includes seeds such as pulses; the term vegetable is somewhat arbitrary, and can be largely defined through culinary and cultural tradition. The original meaning of the word vegetable, still used in biology, is to describe all types of plant, as in the terms "vegetable kingdom" and "vegetable matter".</p><br>
+            <li><%= link_to "Help",   '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
 
   </head>
 
